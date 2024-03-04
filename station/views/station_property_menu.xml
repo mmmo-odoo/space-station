@@ -1,0 +1,4 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<odoo>
+    <menuitem id = "station_menu" name = "Space Station" action = "station_property_action"/>
+</odoo>

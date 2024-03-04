@@ -1,17 +1,26 @@
-# The __manifest__.py file must describe our module and cannot remain empty. Its only required field is the name, but it usually contains much more information.
 {
     'name' : 'Space Station',
     'version' : '1.0',
     'author': "Mayank Mangal Mourya",
-    'summary' : 'Track Real Time Requirements Deal and Opportunities',
+    'summary' : 'Track Real Time Requirements For Astronauts',
     'description' : """
-        Description text
+        space station management project involves creating a comprehensive ERP system to efficiently
+        manage various aspects of a space station, including astronaut requirements, manufacturing 
+        processes, inventory management, and invoicing. The modular structure facilitates the tracking 
+        of astronaut essentials, production orders, and stock levels while streamlining invoicing 
+        procedures. The user-friendly interface and customized workflows enhance usability, and 
+        integrated reporting provides insights into the project's different facets. The project aims 
+        to optimize operations and ensure the smooth functioning of the space station through effective 
+        resource planning and management.
     """,
     'depend' : [
         'base'
     ],
-    'data' : [],
-    'test' : [],
+    'data' : [
+        'security/ir.model.access.csv',
+        'views/station_property_view.xml',
+        'views/station_property_menu.xml',
+    ],
     'installable': True,
     'application': True,
     'auto_install': False
