@@ -1,0 +1,74 @@
+<odoo>
+
+    <data noupdate = "1">
+        <record id = "astro_1" model="station.astronauts">
+            <field name="name">Dr. Emily Rodriguez</field>
+            <field name="date_of_birth">1985-05-15</field>
+            <field name="nationality">United States</field>
+            <field name="gender">female</field>
+            <field name="color">1</field>
+            <field name="address">123 Star Avenue, Houston, TX</field>
+            <field name="phone">(555) 123-4567</field>
+            <field name="email">emily.rodriguez@email.com</field>
+            <field name="bachlor">True</field>
+            <field name="master">True</field>
+            <field name="phd">True</field>
+            <field name="medical_info">Excellent health record with no significant medical issues and Recent medical examinations and certifications completed</field>
+            <field name="fitness_test">passed</field>
+            <field name="recent_medical_examination">done</field>
+            <field name="cardiovascular">True</field>
+            <field name="muscular_health">True</field>
+            <field name="bachlor_educational_institute">MIT University, Masseuse University</field>
+            <field name="master_educational_institute">University of London</field>
+            <field name="phd_educational_institute">Oxford University, USA</field>
+            <field name="work_experience">Completed NASA's Astronaut Candidate Training Program, Proficient in spacewalks, robotics, and spacecraft systems, Emergency procedures training</field>
+            <field name="position">Astronaut</field>
+        </record>
+        <record id = "astro_2" model="station.astronauts">
+            <field name="name">Dr. Marcus Chen</field>
+            <field name="date_of_birth">1975-02-25</field>
+            <field name="nationality">Canadian</field>
+            <field name="gender">male</field>
+            <field name="color">2</field>
+            <field name="address">123 Star MultiPlex Avenue, Houston, Hongkong</field>
+            <field name="phone">(215) 1223-4367</field>
+            <field name="email">marcus.chenmarcus@email.com</field>
+            <field name="bachlor">True</field>
+            <field name="master">True</field>
+            <field name="phd">True</field>
+            <field name="medical_info">Excellent health, passed all physical and medical evaluations</field>
+            <field name="fitness_test">passed</field>
+            <field name="recent_medical_examination">done</field>
+            <field name="cardiovascular">True</field>
+            <field name="muscular_health">True</field>
+            <field name="master_educational_institute">MIT University, Masseuse University</field>
+            <field name="bachlor_educational_institute">University of London</field>
+            <field name="phd_educational_institute">Oxford University, USA</field>
+            <field name="work_experience">Senior Scientist at the Canadian Space Agency, 10 years of research in space-based telescopes and astronomical observations, Completed Canadian Space Agency's Astronaut Training Program</field>
+            <field name="position">Astronaut</field>
+        </record>
+        <record id = "astro_3" model="station.astronauts">
+            <field name="name">Captain Aisha Khan</field>
+            <field name="date_of_birth">1992-02-05</field>
+            <field name="nationality">Pakistan</field>
+            <field name="gender">female</field>
+            <field name="color">3</field>
+            <field name="address">201 MultiPlex afford, Lahore, Pakistan</field>
+            <field name="phone">(342) 2223-4167</field>
+            <field name="email">aishakhan212@email.com</field>
+            <field name="bachlor">True</field>
+            <field name="master">True</field>
+            <field name="phd">False</field>
+            <field name="medical_info">Exceptional physical condition, cleared for long-duration spaceflights</field>
+            <field name="fitness_test">passed</field>
+            <field name="recent_medical_examination">done</field>
+            <field name="cardiovascular">True</field>
+            <field name="muscular_health">True</field>
+            <field name="bachlor_educational_institute">Bachelor's in Aeronautical Engineering from NUST, Pakistan</field>
+            <field name="master_educational_institute">University of Lahore, Pakistan</field>
+            <field name="work_experience">Pilot in the Pakistan Air Force, 7 years of experience in high-altitude flights and combat training</field>
+            <field name="position">Astronaut</field>
+        </record>
+    </data>
+
+</odoo>

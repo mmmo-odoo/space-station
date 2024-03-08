@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="station_astronauts_action" model="ir.actions.act_window">
+        <field name="name">Add Astronaut</field>
+        <field name="res_model">station.astronauts</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="station_astronauts_tree_view" model="ir.ui.view">
+        <field name="name">station.astronauts.tree</field>
+        <field name="model">station.astronauts</field>
+        <field name="arch" type="xml">
+            <tree string="Tests"> 
+                <field name="name"/>
+                <field name="date_of_birth"/>
+                <field name="gender"/>
+                <field name="nationality"/>
+                <field name="fitness_test"/>
+                <field name="recent_medical_examination"/>
+                <field name="position"/>
+            </tree>
+        </field>        
+    </record>
+
+    <record id = "form_station_astronauts_view" model = "ir.ui.view">
+        <field name = "name">station.astronauts.form</field>
+        <field name="model">station.astronauts</field>
+        <field name="arch" type="xml">
+            <form string = "Property">
+                <sheet>
+                    <group name = "header">
+                        <group name = "group0">
+                            <field name = "name" class = 'h1'/>
+                        </group>
+                    </group>
+                    <group name ="main_group">
+                        <group name="group1">
+                            <field name = "gender" />
+                            <field name = "nationality" />
+                            <field name = "position"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Qualification">
+                            <group name = "p1">
+                                <field name = "bachlor" />
+                                <field name = "bachlor_educational_institute" string = "Bachlor's Educational Institute" invisible = "not bachlor"/>
+                                <field name = "master" />
+                                <field name = "master_educational_institute" string = "Master's Educational Institute" invisible = "not master"/>
+                                <field name = "phd"/>
+                                <field name = "phd_educational_institute" string = "PHD Educational Institute" invisible = "not phd"/>
+                            </group>
+                        </page>
+                        <page string = "Experience">
+                            <group name = "exp1">
+                            </group>
+                        </page>
+                        <page string = "Medical Status">
+                            <group name = "med1">
+                                <field name = "fitness_test"/>
+                                <field name = "recent_medical_examination" invisible = "fitness_test not in ['passed']"/> 
+                                <field name = "cardiovascular" invisible = "recent_medical_examination not in ['done']"/>
+                                <field name = "muscular_health" invisible = "recent_medical_examination not in ['done']"/>
+                            </group>
+                        </page>
+                        <page string = "Contact Info">
+                            <group name = "p2">
+                                <field name = "phone"/>
+                                <field name = "address" />
+                                <field name = "email"/>
+                            </group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+</odoo>

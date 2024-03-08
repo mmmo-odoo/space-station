@@ -1,0 +1,220 @@
+<odoo>
+
+    <data noupdate = "1">
+    
+        <record id = "station_1" model = "station.property">       
+            <field name = "name">Salyut 1</field>
+            <field name = "description">Salyut 1</field>
+            <field name = "entity">MOM</field>
+            <field name = "country">Russia</field>
+            <field name = "station_code">SA123UT</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">1971-04-17</field>
+            <field name = "reentered_date">1971-10-11</field>
+            <field name = "days_in_orbit">175</field>
+            <field name = "days_occupied">24</field>
+            <field name = "total_crew_and_visitor">6</field>
+            <field name = "no_of_crew_visitor">2</field>
+            <field name = "no_of_robotic_visitor">0</field>
+            <field name = "mass_at_launched">40620</field>
+            <field name = "pressurized_volume">3500</field>
+            <field name = "state">past_station</field>
+        </record>     
+
+        <record id = "station_2" model = "station.property">       
+            <field name = "name">Skylab</field>
+            <field name = "description">Skylab</field>
+            <field name = "entity">NASA</field>
+            <field name = "country">America</field>
+            <field name = "station_code">SK234AB</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">1973-05-14</field>
+            <field name = "reentered_date">1979-07-11</field>
+            <field name = "days_in_orbit">2249</field>
+            <field name = "days_occupied">171</field>
+            <field name = "total_crew_and_visitor">9</field>
+            <field name = "no_of_crew_visitor">3</field>
+            <field name = "no_of_robotic_visitor">0</field>
+            <field name = "mass_at_launched">169950</field>
+            <field name = "pressurized_volume">12700</field>
+            <field name = "state">past_station</field>
+        </record>   
+
+        <record id = "station_3" model = "station.property">       
+            <field name = "name">Tiangong 1</field>
+            <field name = "description">Tiangong 1</field>
+            <field name = "entity">CMSA</field>
+            <field name = "country">China</field>
+            <field name = "station_code">TI345NG</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">2011-11-29</field>
+            <field name = "reentered_date">2018-04-02</field>
+            <field name = "days_in_orbit">2377</field>
+            <field name = "days_occupied">22</field>
+            <field name = "total_crew_and_visitor">6</field>
+            <field name = "no_of_crew_visitor">2</field>
+            <field name = "no_of_robotic_visitor">1</field>
+            <field name = "mass_at_launched">18753</field>
+            <field name = "pressurized_volume">530</field>
+            <field name = "state">past_station</field>
+        </record>   
+
+        <record id = "station_4" model = "station.property">       
+            <field name = "name">Internationl Space Station</field>
+            <field name = "description">Internationl space-based station</field>
+            <field name = "entity">NASA</field>
+            <field name = "country">America</field>
+            <field name = "station_code">IN234SS</field>
+            <field name = "crew_size">7</field>
+            <field name = "launched_date">1998-09-20</field>
+            <field name = "days_in_orbit">9223</field>
+            <field name = "days_occupied">8552</field>
+            <field name = "total_crew_and_visitor">230</field>
+            <field name = "no_of_crew_visitor">88</field>
+            <field name = "no_of_robotic_visitor">94</field>
+            <field name = "mass_at_launched">990000</field>
+            <field name = "pressurized_volume">35500</field>
+            <field name = "state">operational_stations</field>
+        </record>   
+
+        <record id = "station_5" model = "station.property">       
+            <field name = "name">Tiangong Space Station</field>
+            <field name = "description">Tiangong space-based state</field>
+            <field name = "entity">CSMA</field>
+            <field name = "country">China</field>
+            <field name = "station_code">TI324SS</field>
+            <field name = "crew_size">5</field>
+            <field name = "launched_date">2021-04-29</field>
+            <field name = "days_in_orbit">1037</field>
+            <field name = "days_occupied">907</field>
+            <field name = "total_crew_and_visitor">17</field>
+            <field name = "no_of_crew_visitor">6</field>
+            <field name = "no_of_robotic_visitor">8</field>
+            <field name = "mass_at_launched">220000</field>
+            <field name = "pressurized_volume">4310</field>
+            <field name = "state">operational_stations</field>
+        </record>   
+
+        <record id = "station_6" model = "station.property">       
+            <field name = "name"></field>
+            <field name = "description"></field>
+            <field name = "entity"></field>
+            <field name = "country"></field>
+            <field name = "station_code"></field>
+            <field name = "crew_size"></field>
+            <field name = "launched_date"></field>
+            <field name = "reentered_date"></field>
+            <field name = "days_in_orbit"></field>
+            <field name = "days_occupied"></field>
+            <field name = "total_crew_and_visitor"></field>
+            <field name = "no_of_crew_visitor"></field>
+            <field name = "no_of_robotic_visitor"></field>
+            <field name = "mass_at_launched"></field>
+            <field name = "astronauts_ids"></field>
+            <field name = "pressurized_volume"></field>
+            <field name = "state"></field>
+        </record>   
+
+        <record id = "station_7" model = "station.property">       
+            <field name = "name"></field>
+            <field name = "description"></field>
+            <field name = "entity"></field>
+            <field name = "country"></field>
+            <field name = "station_code"></field>
+            <field name = "crew_size"></field>
+            <field name = "launched_date"></field>
+            <field name = "reentered_date"></field>
+            <field name = "days_in_orbit"></field>
+            <field name = "days_occupied"></field>
+            <field name = "total_crew_and_visitor"></field>
+            <field name = "no_of_crew_visitor"></field>
+            <field name = "no_of_robotic_visitor"></field>
+            <field name = "mass_at_launched"></field>
+            <field name = "astronauts_ids"></field>
+            <field name = "pressurized_volume"></field>
+            <field name = "state"></field>
+        </record>   
+
+        <record id = "station_8" model = "station.property">       
+            <field name = "name"></field>
+            <field name = "description"></field>
+            <field name = "entity"></field>
+            <field name = "country"></field>
+            <field name = "station_code"></field>
+            <field name = "crew_size"></field>
+            <field name = "launched_date"></field>
+            <field name = "reentered_date"></field>
+            <field name = "days_in_orbit"></field>
+            <field name = "days_occupied"></field>
+            <field name = "total_crew_and_visitor"></field>
+            <field name = "no_of_crew_visitor"></field>
+            <field name = "no_of_robotic_visitor"></field>
+            <field name = "mass_at_launched"></field>
+            <field name = "astronauts_ids"></field>
+            <field name = "pressurized_volume"></field>
+            <field name = "state"></field>
+        </record>   
+
+        <record id = "station_9" model = "station.property">       
+            <field name = "name"></field>
+            <field name = "description"></field>
+            <field name = "entity"></field>
+            <field name = "country"></field>
+            <field name = "station_code"></field>
+            <field name = "crew_size"></field>
+            <field name = "launched_date"></field>
+            <field name = "reentered_date"></field>
+            <field name = "days_in_orbit"></field>
+            <field name = "days_occupied"></field>
+            <field name = "total_crew_and_visitor"></field>
+            <field name = "no_of_crew_visitor"></field>
+            <field name = "no_of_robotic_visitor"></field>
+            <field name = "mass_at_launched"></field>
+            <field name = "astronauts_ids"></field>
+            <field name = "pressurized_volume"></field>
+            <field name = "state"></field>
+        </record>   
+
+        <record id = "station_10" model = "station.property">       
+            <field name = "name"></field>
+            <field name = "description"></field>
+            <field name = "entity"></field>
+            <field name = "country"></field>
+            <field name = "station_code"></field>
+            <field name = "crew_size"></field>
+            <field name = "launched_date"></field>
+            <field name = "reentered_date"></field>
+            <field name = "days_in_orbit"></field>
+            <field name = "days_occupied"></field>
+            <field name = "total_crew_and_visitor"></field>
+            <field name = "no_of_crew_visitor"></field>
+            <field name = "no_of_robotic_visitor"></field>
+            <field name = "mass_at_launched"></field>
+            <field name = "astronauts_ids"></field>
+            <field name = "pressurized_volume"></field>
+            <field name = "state"></field>
+        </record>   
+
+        <record id = "station_11" model = "station.property">       
+            <field name = "name"></field>
+            <field name = "description"></field>
+            <field name = "entity"></field>
+            <field name = "country"></field>
+            <field name = "station_code"></field>
+            <field name = "crew_size"></field>
+            <field name = "launched_date"></field>
+            <field name = "reentered_date"></field>
+            <field name = "days_in_orbit"></field>
+            <field name = "days_occupied"></field>
+            <field name = "total_crew_and_visitor"></field>
+            <field name = "no_of_crew_visitor"></field>
+            <field name = "no_of_robotic_visitor"></field>
+            <field name = "mass_at_launched"></field>
+            <field name = "astronauts_ids"></field>
+            <field name = "pressurized_volume"></field>
+            <field name = "state"></field>
+        </record>   
+
+    </data>
+
+</odoo>

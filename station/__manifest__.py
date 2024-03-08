@@ -18,10 +18,16 @@
     ],
     'data' : [
         'security/ir.model.access.csv',
+        'views/station_astronauts_view.xml',
         'views/station_property_view.xml',
         'views/station_property_menu.xml',
     ],
+    'demo' : [
+        'demo/station.detail.xml',
+        'demo/station.astronauts.xml',
+    ],
     'installable': True,
     'application': True,
-    'auto_install': False
+    'auto_install': False,
+    'license':'LGPL-3',
 }
