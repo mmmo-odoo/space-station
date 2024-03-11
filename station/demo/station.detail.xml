@@ -5,7 +5,6 @@
         <record id = "station_1" model = "station.property">       
             <field name = "name">Salyut 1</field>
             <field name = "description">Salyut 1</field>
-            <field name = "entity">MOM</field>
             <field name = "country">Russia</field>
             <field name = "station_code">SA123UT</field>
             <field name = "crew_size">3</field>
@@ -24,7 +23,6 @@
         <record id = "station_2" model = "station.property">       
             <field name = "name">Skylab</field>
             <field name = "description">Skylab</field>
-            <field name = "entity">NASA</field>
             <field name = "country">America</field>
             <field name = "station_code">SK234AB</field>
             <field name = "crew_size">3</field>
@@ -43,7 +41,6 @@
         <record id = "station_3" model = "station.property">       
             <field name = "name">Tiangong 1</field>
             <field name = "description">Tiangong 1</field>
-            <field name = "entity">CMSA</field>
             <field name = "country">China</field>
             <field name = "station_code">TI345NG</field>
             <field name = "crew_size">3</field>
@@ -62,7 +59,6 @@
         <record id = "station_4" model = "station.property">       
             <field name = "name">Internationl Space Station</field>
             <field name = "description">Internationl space-based station</field>
-            <field name = "entity">NASA</field>
             <field name = "country">America</field>
             <field name = "station_code">IN234SS</field>
             <field name = "crew_size">7</field>
@@ -80,7 +76,6 @@
         <record id = "station_5" model = "station.property">       
             <field name = "name">Tiangong Space Station</field>
             <field name = "description">Tiangong space-based state</field>
-            <field name = "entity">CSMA</field>
             <field name = "country">China</field>
             <field name = "station_code">TI324SS</field>
             <field name = "crew_size">5</field>
@@ -98,7 +93,6 @@
         <record id = "station_6" model = "station.property">       
             <field name = "name">Bhartiya Antriksha Station</field>
             <field name = "description">Antriksh Station</field>
-            <field name = "entity">ISRO</field>
             <field name = "country">India</field>
             <field name = "station_code">BH123AS</field>
             <field name = "crew_size">3</field>
@@ -109,7 +103,6 @@
         <record id = "station_7" model = "station.property">       
             <field name = "name">Axiom Station</field>
             <field name = "description">Axiom Station</field>
-            <field name = "entity">Axiom Space</field>
             <field name = "country">America</field>
             <field name = "station_code">AX543ST</field>
             <field name = "crew_size">0</field>
@@ -119,8 +112,7 @@
 
         <record id = "station_8" model = "station.property">       
             <field name = "name">StarLab</field>
-            <field name = "description">Starlab is operated by various entity</field>
-            <field name = "entity">Voyager Space</field>
+            <field name = "description">Starlab is oce</field>
             <field name = "country">America</field>
             <field name = "station_code">ST342LB</field>
             <field name = "crew_size">4</field>
@@ -131,7 +123,6 @@
         <record id = "station_9" model = "station.property">       
             <field name = "name">Orbital Reef</field>
             <field name = "description">Orbital reef blue origin private</field>
-            <field name = "entity">Sierra Space</field>
             <field name = "country">North California</field>
             <field name = "station_code">OR745RF</field>
             <field name = "crew_size">10</field>
@@ -142,7 +133,6 @@
         <record id = "station_10" model = "station.property">       
             <field name = "name">Lunar Orbital Station</field>
             <field name = "description">Lunar Orbial Station crew size TBD</field>
-            <field name = "entity">Roscosmos</field>
             <field name = "country">Russia</field>
             <field name = "station_code">LU932OS</field>
             <field name = "crew_size">0</field>
@@ -153,7 +143,6 @@
         <record id = "station_11" model = "station.property">       
             <field name = "name">Skylab B</field>
             <field name = "description">Constructed, but launch cancelled due to lack of funding.[101] Now a museum piece.</field>
-            <field name = "entity">NASA</field>
             <field name = "country">America</field>
             <field name = "station_code">SK432BB</field>
             <field name = "crew_size">3</field>
@@ -164,7 +153,6 @@
         <record id = "station_12" model = "station.property">       
             <field name = "name">Tiangong 3</field>
             <field name = "description">The goals for Tiangong-2 and 3 were merged, and were completed by a single station rather than two separate stations.</field>
-            <field name = "entity">CSNA</field>
             <field name = "country">China</field>
             <field name = "station_code">TI645NG</field>
             <field name = "crew_size">3</field>

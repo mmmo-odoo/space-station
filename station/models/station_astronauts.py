@@ -46,4 +46,3 @@ class StationAstronauts(models.Model):
     phd_educational_institute = fields.Char()
     work_experience = fields.Char()
     position = fields.Char()
-

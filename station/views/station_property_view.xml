@@ -4,7 +4,7 @@
     <record id = "station_property_action" model = "ir.actions.act_window">
         <field name="name">Create Station</field>
         <field name = "res_model">station.property</field>
-        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_mode">kanban,tree,form</field>
     </record>
 
     <record id="station_property_view_tree" model="ir.ui.view">
@@ -19,6 +19,7 @@
                 <field name="launched_date"/>
                 <field name="crew_size"/>
                 <field name="days_occupied"/>
+                <field name = "entity" widget = "many2many_tags" options = "{'color_field' : 'color'}"/>
                 <field name = "mass_at_launched"/>
                 <field name="pressurized_volume"/>
             </tree>
@@ -47,7 +48,7 @@
                         <page string="Description">
                             <group name = "p1">
                                 <field name = "description" />
-                                <field name = "entity" />
+                                <field name = "entity" widget = "many2many_tags" options = "{'color_field' : 'color'}"/>
                                 <field name = "crew_size"/>
                                 <field name = "days_in_orbit" />
                                 <field name = "reentered_date"/>
@@ -59,6 +60,7 @@
                                 <field name = "crew_size"/>
                                 <field name = "astronauts_ids" widget = "many2many_tags" options = "{'color_field' : 'color'}"/>
                                 <field name = "total_crew_and_visitor" />
+                                <field name = "user_id"/>
                             </group>
                         </page>
                     </notebook>
@@ -81,7 +83,7 @@
                                 <strong class="o_kanban_record_title"><h2><span><field name="name"/></span></h2></strong>
                             </div>
                             <div>
-                                <field name = "astronauts_ids" widget = "many2many_tags" options = "{'color_field' : 'color'}"/>
+                                <span><field name = "entity" widget = "many2many_tags" options = "{'color_field' : 'color'}"/></span>
                             </div>
                             <div>
                                 <div>
@@ -94,12 +96,12 @@
                             <div class="o_kanban_record_bottom">
                                 <div class="oe_kanban_bottom_left">
                                     <div class="o_kanban_inline_block">
-                                        <span>bottom-left-side</span>
+                                        <field name = "priority" widget="priority"/>
                                     </div>
                                 </div>
                                 <div class="oe_kanban_bottom_right">
                                     <div class="o_kanban_inline_block">
-                                        <span>bottom-right-side</span>
+                                        <field name="user_id" widget="many2one_avatar_user" domain="[('share', '=', False)]"/>
                                     </div>
                                 </div>
                             </div>

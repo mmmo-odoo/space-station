@@ -3,4 +3,5 @@
     <menuitem id = "station_menu" name = "Space Station" action = "station_property_action"/>
     <menuitem id ="station_menu_back" name = "Station" parent = "station_menu" action = "station_property_action" sequence = "1"/>
     <menuitem id = "station_astronauts" name = "Astronauts" parent = "station_menu" action = "station_astronauts_action" sequence = "2"/>
+    <menuitem id = "station_organization" name = "Organizations" parent = "station_menu" action = "station_organization_action" sequence = "3"/>
 </odoo>
