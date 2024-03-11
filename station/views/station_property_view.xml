@@ -47,7 +47,7 @@
                         <page string="Description">
                             <group name = "p1">
                                 <field name = "description" />
-                                <field name = "program_entity" />
+                                <field name = "entity" />
                                 <field name = "crew_size"/>
                                 <field name = "days_in_orbit" />
                                 <field name = "reentered_date"/>

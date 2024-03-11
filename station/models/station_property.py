@@ -15,7 +15,7 @@ class StationProperty(models.Model) :
     days_occupied = fields.Integer()
     total_crew_and_visitor = fields.Integer()
     no_of_crew_visited = fields.Integer()
-    no_of_robotic_visiter = fields.Integer()
+    no_of_robotic_visitor = fields.Integer()
     mass_at_launched = fields.Integer(string="Mass (lb)")
     astronauts_ids = fields.Many2many("station.astronauts", string = "Astronauts")
     pressurized_volume = fields.Integer(string="Pressurized Volumne (cu ft)")

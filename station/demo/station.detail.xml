@@ -1,0 +1,177 @@
+<odoo>
+
+    <data noupdate = "1">
+    
+        <record id = "station_1" model = "station.property">       
+            <field name = "name">Salyut 1</field>
+            <field name = "description">Salyut 1</field>
+            <field name = "entity">MOM</field>
+            <field name = "country">Russia</field>
+            <field name = "station_code">SA123UT</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">1971-04-17</field>
+            <field name = "reentered_date">1971-10-11</field>
+            <field name = "days_in_orbit">175</field>
+            <field name = "days_occupied">24</field>
+            <field name = "total_crew_and_visitor">6</field>
+            <field name = "no_of_crew_visited">2</field>
+            <field name = "no_of_robotic_visitor">0</field>
+            <field name = "mass_at_launched">40620</field>
+            <field name = "pressurized_volume">3500</field>
+            <field name = "state">past_station</field>
+        </record>     
+
+        <record id = "station_2" model = "station.property">       
+            <field name = "name">Skylab</field>
+            <field name = "description">Skylab</field>
+            <field name = "entity">NASA</field>
+            <field name = "country">America</field>
+            <field name = "station_code">SK234AB</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">1973-05-14</field>
+            <field name = "reentered_date">1979-07-11</field>
+            <field name = "days_in_orbit">2249</field>
+            <field name = "days_occupied">171</field>
+            <field name = "total_crew_and_visitor">9</field>
+            <field name = "no_of_crew_visited">3</field>
+            <field name = "no_of_robotic_visitor">0</field>
+            <field name = "mass_at_launched">169950</field>
+            <field name = "pressurized_volume">12700</field>
+            <field name = "state">past_station</field>
+        </record>   
+
+        <record id = "station_3" model = "station.property">       
+            <field name = "name">Tiangong 1</field>
+            <field name = "description">Tiangong 1</field>
+            <field name = "entity">CMSA</field>
+            <field name = "country">China</field>
+            <field name = "station_code">TI345NG</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">2011-11-29</field>
+            <field name = "reentered_date">2018-04-02</field>
+            <field name = "days_in_orbit">2377</field>
+            <field name = "days_occupied">22</field>
+            <field name = "total_crew_and_visitor">6</field>
+            <field name = "no_of_crew_visited">2</field>
+            <field name = "no_of_robotic_visitor">1</field>
+            <field name = "mass_at_launched">18753</field>
+            <field name = "pressurized_volume">530</field>
+            <field name = "state">past_station</field>
+        </record>   
+
+        <record id = "station_4" model = "station.property">       
+            <field name = "name">Internationl Space Station</field>
+            <field name = "description">Internationl space-based station</field>
+            <field name = "entity">NASA</field>
+            <field name = "country">America</field>
+            <field name = "station_code">IN234SS</field>
+            <field name = "crew_size">7</field>
+            <field name = "launched_date">1998-09-20</field>
+            <field name = "days_in_orbit">9223</field>
+            <field name = "days_occupied">8552</field>
+            <field name = "total_crew_and_visitor">230</field>
+            <field name = "no_of_crew_visited">88</field>
+            <field name = "no_of_robotic_visitor">94</field>
+            <field name = "mass_at_launched">990000</field>
+            <field name = "pressurized_volume">35500</field>
+            <field name = "state">operational_stations</field>
+        </record>   
+
+        <record id = "station_5" model = "station.property">       
+            <field name = "name">Tiangong Space Station</field>
+            <field name = "description">Tiangong space-based state</field>
+            <field name = "entity">CSMA</field>
+            <field name = "country">China</field>
+            <field name = "station_code">TI324SS</field>
+            <field name = "crew_size">5</field>
+            <field name = "launched_date">2021-04-29</field>
+            <field name = "days_in_orbit">1037</field>
+            <field name = "days_occupied">907</field>
+            <field name = "total_crew_and_visitor">17</field>
+            <field name = "no_of_crew_visited">6</field>
+            <field name = "no_of_robotic_visitor">8</field>
+            <field name = "mass_at_launched">220000</field>
+            <field name = "pressurized_volume">4310</field>
+            <field name = "state">operational_stations</field>
+        </record>   
+
+        <record id = "station_6" model = "station.property">       
+            <field name = "name">Bhartiya Antriksha Station</field>
+            <field name = "description">Antriksh Station</field>
+            <field name = "entity">ISRO</field>
+            <field name = "country">India</field>
+            <field name = "station_code">BH123AS</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">2023-01-01</field>
+            <field name = "state">planned_and_proposed</field>
+        </record>   
+
+        <record id = "station_7" model = "station.property">       
+            <field name = "name">Axiom Station</field>
+            <field name = "description">Axiom Station</field>
+            <field name = "entity">Axiom Space</field>
+            <field name = "country">America</field>
+            <field name = "station_code">AX543ST</field>
+            <field name = "crew_size">0</field>
+            <field name = "launched_date">2026-01-01</field>
+            <field name = "state">planned_and_proposed</field>
+        </record>   
+
+        <record id = "station_8" model = "station.property">       
+            <field name = "name">StarLab</field>
+            <field name = "description">Starlab is operated by various entity</field>
+            <field name = "entity">Voyager Space</field>
+            <field name = "country">America</field>
+            <field name = "station_code">ST342LB</field>
+            <field name = "crew_size">4</field>
+            <field name = "launched_date">2028-01-01</field>
+            <field name = "state">planned_and_proposed</field>
+        </record>   
+
+        <record id = "station_9" model = "station.property">       
+            <field name = "name">Orbital Reef</field>
+            <field name = "description">Orbital reef blue origin private</field>
+            <field name = "entity">Sierra Space</field>
+            <field name = "country">North California</field>
+            <field name = "station_code">OR745RF</field>
+            <field name = "crew_size">10</field>
+            <field name = "launched_date">2020-06-01</field>
+            <field name = "state">planned_and_proposed</field>
+        </record>   
+
+        <record id = "station_10" model = "station.property">       
+            <field name = "name">Lunar Orbital Station</field>
+            <field name = "description">Lunar Orbial Station crew size TBD</field>
+            <field name = "entity">Roscosmos</field>
+            <field name = "country">Russia</field>
+            <field name = "station_code">LU932OS</field>
+            <field name = "crew_size">0</field>
+            <field name = "launched_date">2030-01-01</field>
+            <field name = "state">planned_and_proposed</field>
+        </record>   
+
+        <record id = "station_11" model = "station.property">       
+            <field name = "name">Skylab B</field>
+            <field name = "description">Constructed, but launch cancelled due to lack of funding.[101] Now a museum piece.</field>
+            <field name = "entity">NASA</field>
+            <field name = "country">America</field>
+            <field name = "station_code">SK432BB</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">1976-01-01</field>
+            <field name = "state">cancelled_projects</field>
+        </record>   
+
+        <record id = "station_12" model = "station.property">       
+            <field name = "name">Tiangong 3</field>
+            <field name = "description">The goals for Tiangong-2 and 3 were merged, and were completed by a single station rather than two separate stations.</field>
+            <field name = "entity">CSNA</field>
+            <field name = "country">China</field>
+            <field name = "station_code">TI645NG</field>
+            <field name = "crew_size">3</field>
+            <field name = "launched_date">2017-01-01</field>
+            <field name = "state">cancelled_projects</field>
+        </record>   
+
+    </data>
+
+</odoo>
