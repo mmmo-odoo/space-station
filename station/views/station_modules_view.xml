@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="module_action" model="ir.actions.act_window">
+        <field name="name">Modules</field>
+        <field name="res_model">station.modules</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <record id = "station_module_tree_view" model = "ir.ui.view">
+        <field name="name">module.tree</field>
+        <field name="model">station.modules</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name = "name"/>
+                <field name = "type"/>
+                <field name = "launch_date"/>
+                <field name = "manufacturer"/>
+                <field name = "mass"/>
+                <field name = "status" invisible = "stage not in ['done']"/>
+                <field name = "stage"/>
+            </tree>
+        </field> 
+    </record>
+
+
+    <!-- ############################ Form View ############################    -->
+
+
+    <record id = "station_module_form_view" model = "ir.ui.view">
+        <field name = "name">Modules.form</field>
+        <field name="model">station.modules</field>
+        <field name="arch" type="xml">
+            <form string = "Property">
+                <header>
+                    <field name="stage" widget="statusbar"/>
+                </header>
+                <sheet>
+                    <group name = "header">
+                        <group name = "group0">
+                            <field name = "name" class = 'h1'/>
+                        </group>
+                    </group>
+                    <separator />  <!-- we can use for separate two content in form view -->
+                    <group name ="main_group">
+                        <group name="group1">
+                            <field name = "type" />
+                            <field name = "manufacturer" />
+                            <field name = "length"/>
+                            <field name = "height"/>
+                            <field name = "status"/>
+                            <field name = "crew_capacity"/>
+                            <field name = "upcoming_maintenace_schedule"/>
+                        </group>
+                        <group name="group2">
+                            <field name = "launch_date" />
+                            <field name = "dimension" />
+                            <field name = "width" />
+                            <field name = "mass"/>
+                            <field name = "stage"/>
+                            <field name = "life_expectation"/>
+                            <field name = "power_requirement"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <!-- page implemented -->
+                        <page string="Detailed Description">
+                            <group name = "p1">
+                                <field name = "description" />
+                                <field name = "mission_history" />
+                                <field name = "maintenance_record"/>
+                                <field name = "notes"/>
+                            </group>
+                        </page>
+                        <page string = "Equipments">
+                            <!-- shows here all equipments -->
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

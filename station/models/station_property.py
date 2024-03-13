@@ -28,8 +28,9 @@ class StationProperty(models.Model) :
     pressurized_volume = fields.Integer(string="Pressurized Volumne (cu ft)")
     priority = fields.Selection(AVAILABLE_PRIORITIES, string='Priority', index=True,
         default=AVAILABLE_PRIORITIES[0][0])
-    user_id = fields.Many2one('res.users', string='Salesperson', default=lambda self: self.env.user,
+    user_id = fields.Many2one('res.users', string='President', default=lambda self: self.env.user,
         domain="[('share', '=', False)]")
+    module_ids = fields.One2many("station.modules", "station_ids")
     state = fields.Selection(
         string="Status",
         required=True,
@@ -43,3 +44,5 @@ class StationProperty(models.Model) :
         copy=False,
         default="prototypes",
     )
+    date_from = fields.Date('Date From')
+    date_to = fields.Date('Date To')

@@ -3,7 +3,7 @@
     <record id="station_astronauts_action" model="ir.actions.act_window">
         <field name="name">Add Astronaut</field>
         <field name="res_model">station.astronauts</field>
-        <field name="view_mode">tree,form,kanban</field>
+        <field name="view_mode">kanban,tree,form</field>
     </record>
 
     <record id="station_astronauts_tree_view" model="ir.ui.view">
@@ -81,32 +81,42 @@
         <field name="model">station.astronauts</field>
         <field name="arch" type="xml">
             <kanban>
-                <templates>
-                    <t t-name="kanban-box">
-                        <div t-attf-class="oe_kanban_content oe_kanban_global_click">
-                            <div>
-                                <strong class="o_kanban_record_title"><h2><span><field name="name"/></span></h2></strong>
-                            </div>
-                            <div>
-                                <field name = "gender"/>
-                            </div>
-                            <div>
-                                <div>
-                                    <span><strong>Birth Date : </strong><field name = "date_of_birth"/></span>
-                                </div>
-                                <div>
-                                    <span><strong>Nationalilty : </strong><field name = "nationality"/></span>
-                                </div>
-                            </div>
-                            <div class="o_kanban_record_bottom">
-                                <div class="oe_kanban_bottom_left">
-                                    <div class="o_kanban_inline_block">
-                                        <field name = "position"/>
+                    <field name="name"/>
+                    <field name="gender"/>
+                    <field name="date_of_birth"/>
+                    <field name="nationality"/>
+                    <field name="position"/>
+                    <field name="phone"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click o_kanban_record_has_image_fill o_hr_kanban_record">
+                            <div class="oe_kanban_details">
+                                <div class="o_kanban_record_top">
+                                    <div class="o_kanban_record_headings">
+                                        <strong class="o_kanban_record_title">
+                                            <field name="name" placeholder="Astronaut's Name"/>
+                                        </strong>
+                                        <span class="o_kanban_record_subtitle"><field name="position"/></span>
                                     </div>
                                 </div>
-                                <div class="oe_kanban_bottom_right">
-                                    <div class="o_kanban_inline_block">
+                                <ul>
+                                    <li>
+                                        <i class="fa fa-fw me-2 fa-envelope text-primary" title="Email"/>
+                                        <field name="email"/>
+                                    </li>
+                                    <li class="o_force_ltr">
+                                        <i class="fa fa-fw me-2 fa-phone text-primary" title="Phone"/>
                                         <field name="phone"/>
+                                    </li>
+                                </ul>
+                                <div class="oe_kanban_content position-absolute start-0 bottom-0 end-0 me-2">
+                                    <div class="o_kanban_record_bottom mt-3">
+                                        <div class="oe_kanban_bottom_left"/>
+                                        <div class="oe_kanban_bottom_right">
+                                            <div class="mb-1 ms-2 me-n1">
+                                                <field name="nationality"/>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

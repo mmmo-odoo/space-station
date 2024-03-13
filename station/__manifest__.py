@@ -13,11 +13,14 @@
         to optimize operations and ensure the smooth functioning of the space station through effective 
         resource planning and management.
     """,
-    'depend' : [
-        'base'
+    'depends' : [
+        'base',
+        'product',
     ],
     'data' : [
         'security/ir.model.access.csv',
+        'views/station_product_view.xml',
+        'views/station_modules_view.xml',
         'views/station_organization_view.xml',
         'views/station_astronauts_view.xml',
         'views/station_property_view.xml',

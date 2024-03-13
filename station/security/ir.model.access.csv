@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 station.access_station_property,access_station_property,station.model_station_property,base.group_user,1,1,1,1
 station.access_station_astronauts,access_station_astronauts,station.model_station_astronauts,base.group_user,1,1,1,1
 station.access_station_organization,access_station_organization,station.model_station_organization,base.group_user,1,1,1,1
+station.access_station_modules,access_station_modules,station.model_station_modules,base.group_user,1,1,1,1
